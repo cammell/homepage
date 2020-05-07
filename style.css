@@ -1,0 +1,25 @@
+body {
+    width: 1200px;
+    background-color: #fefefe;
+}
+
+h2 {
+    color: #1460AA;
+}
+
+
+.justify {
+    text-justify: auto;
+    text-align: justify;
+}
+
+.centered {
+    
+    text-align: center;
+    
+
+}
+
+.bold {
+    font-weight: 900;
+}
