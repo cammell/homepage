@@ -3,6 +3,19 @@ body {
   background-color: #fefefe;
 }
 
+.navigation-header {
+    background-color: #4975a0;
+    color: #FFF;
+    
+    
+}
+
+.navigation-header__link {
+    color: #FFF;
+    margin-right: 30px;
+    display: inline-block;
+}
+
 h2 {
   color: #1460aa;
 }
