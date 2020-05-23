@@ -16,6 +16,10 @@ body {
     margin-right: 30px;
     display: inline-block;
 }
+.navigation-header__date {
+  display: inline-block;
+  float: right;
+}
 
 h2 {
   color: #1460aa;
