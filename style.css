@@ -1,5 +1,6 @@
 body {
-  width: 1200px;
+  
+  
   background-color: #fefefe;
 }
 
@@ -25,10 +26,16 @@ h2 {
   text-align: justify;
 }
 
-.centered {
-  text-align: center;
+.main {
+  margin: 0 auto;
+  width: 1178px;
 }
 
 .bold {
   font-weight: 900;
+}
+
+.article {
+  padding: 10px 0;
+  
 }
