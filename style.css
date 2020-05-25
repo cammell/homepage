@@ -34,7 +34,18 @@ h2 {
   margin: 0 auto;
   width: 1178px;
 }
+.main__header {
+  margin: 0 auto;
+  
+}
+.main__image {
+  margin: 0 auto;
+}
+.blog {
+  border: 1px solid #1460aa;
+  padding: 5px;
 
+}
 .bold {
   font-weight: 900;
 }
