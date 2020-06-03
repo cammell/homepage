@@ -63,5 +63,6 @@ h2 {
 
 .article {
   padding: 10px 0;
+  border-bottom: double;
   
 }
