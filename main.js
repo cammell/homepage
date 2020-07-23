@@ -6,8 +6,30 @@ console.log(`Hello there, my name is ${name} and im ${age}`);
 const date=new Date();
 document.querySelector('.navigation-header__date--js').innerHTML=date;
 
+//function homework week 5
+
+
 
 function printNameAge(name, age) {
         //console.log('Hello from function printNameAge. My name is ${name} and im ${age}');
-        document.querySelector('.article--js').innerHTML=`<p>Hello from function printNameAge. My name is ${name} and im ${age}</p>`
+        return `Hello from function printNameAge. My name is ${name} and im ${age} years old`
+}
+
+//fat arrow function, homework week 5
+
+const printNameAgeArrow=(name, age) => {
+        return  `Hello from function printNameAgeArrow. My name is ${name} and im ${age} years old`
+}
+
+function addParagraph(name, age, arr) {
+        const newP=document.createElement("p");
+        let newText;
+        if(!arr) {
+                newText=document.createTextNode(printNameAge(name, age));
+        } else
+                newText=document.createTextNode(printNameAgeArrow(name, age));
+        
+        newP.appendChild(newText);
+        const currentP= document.querySelector('.article--js');
+        currentP.insertBefore(newP, null);
 }

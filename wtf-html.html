@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
     <title>Homepage</title>
   </head>
   <body>
@@ -38,7 +38,18 @@
         <article class="article article--js" >
           <h3>data 2020.07.15</h3>
           <p>Week 5 - homework, adding functions to page</p>
-          <p><script>window.onload=printNameAge('Pawel',45);</script></p>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            addParagraph("Paweł", 46, 1)}, false);
+          </script>
+        </article>
+        <article class="article article--js" >
+          <h3>data 2020.07.16</h3>
+          <p>Week 5 - homework, adding functions to page</p>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            printNameAgeArrow('PawelArr',47);}, false);
+          </script>
         </article>
       </section>
     </main>
