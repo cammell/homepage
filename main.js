@@ -23,7 +23,7 @@ const printNameAgeArrow=(name, age) => {
 
 function addParagraph(name, age, arr) {
         const newP=document.createElement("p");
-        let newText;
+        let      newText;
         if(!arr) {
                 newText=document.createTextNode(printNameAge(name, age));
         } else
@@ -32,4 +32,20 @@ function addParagraph(name, age, arr) {
         newP.appendChild(newText);
         const currentP= document.querySelector('.article--js');
         currentP.insertBefore(newP, null);
+}
+
+const addP = {
+        name: undefined,
+        age: undefined,
+        printNameAgeMethod: (name, age) => {
+                return  `Hello from function printNameAgeMethod. My name is ${name} and im ${age} years old`
+        },
+        addParagraphMethod: (name, age) => {
+                const newP=document.createElement("p");
+                let      newText;
+                newText=document.createTextNode(addP.printNameAgeMethod(name, age));
+                newP.appendChild(newText);
+                const currentP= document.querySelector('.article--js');
+                currentP.insertBefore(newP, null);
+        },
 }
