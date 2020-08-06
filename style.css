@@ -7,17 +7,26 @@ body {
 .navigation-header {
     background-color: #4975a0;
     color: #FFF;
+    align-items: center;
     
+    
+    
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
     
 }
 
 .navigation-header__link {
     color: #FFF;
     margin-right: 30px;
-    display: inline-block;
+       /* display: inline-block; */
 }
 .navigation-header__date {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
 }
 
