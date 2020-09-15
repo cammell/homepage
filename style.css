@@ -79,14 +79,23 @@ h2 {
 
 .grid {
   display: grid;
+  grid-template-columns: 200px 1fr;
   grid-template-areas: "grid__h2 grid__h2"
                         "grid__h3 grid__text";
+  
 }
 
 .grid__h2 {
   grid-area: grid__h2;
 }
 
+
+.grid__h3 {
+  grid-area: grid__h3;
+}
+
+
 .grid__text{
   grid-area:  grid__text;
 }
+
