@@ -1,17 +1,19 @@
 body {
-  background: rgb(106,106,106);
-  background: linear-gradient(90deg, rgba(106,106,106,1) 0%, rgba(203,203,203,1) 33%, rgba(100,147,200,1) 100%); 
-  
+  background: rgb(106, 106, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(106, 106, 106, 1) 0%,
+    rgba(203, 203, 203, 1) 33%,
+    rgba(100, 147, 200, 1) 100%
+  );
+
   /* background-color: #fefefe; */
 }
 
 .navigation-header {
-    background-color: #4975a0;
-    color: #FFF;
-    align-items: center;
-    
-    
-    
+  background-color: #4975a0;
+  color: #fff;
+  
 }
 
 header {
@@ -19,8 +21,8 @@ header {
 }
 
 .navigation-header__link {
-    color: #FFF;
-    
+  color: #fff;
+  display: block;
 }
 .navigation-header__date {
   /* display: inline-block; */
@@ -43,26 +45,22 @@ h2 {
 
 .main__h1 {
   display: flex;
-  
-  justify-content: center;
 
+  justify-content: center;
 }
 .main__header {
   margin: 0 auto;
-  
 }
 
 .main__image {
   margin: 0 auto;
   display: flex;
   height: 50px;
-
 }
 
 .blog {
   border: 1px solid #1460aa;
   padding: 5px;
-
 }
 .bold {
   font-weight: 900;
@@ -71,50 +69,60 @@ h2 {
 .article {
   padding: 10px 0;
   border-bottom: double;
-  
 }
 
 .grid {
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-areas: "grid__h2 grid__h2"
-                        "grid__h3 grid__text";
-  
+  grid-template-areas:
+    "grid__h2 grid__h2"
+    "grid__h3 grid__text";
 }
 
 .grid__h2 {
   grid-area: grid__h2;
 }
 
-
 .grid__h3 {
   grid-area: grid__h3;
 }
 
-
-.grid__text{
-  grid-area:  grid__text;
+.grid__text {
+  grid-area: grid__text;
 }
 
-@media screen and (min-width: 1024px ) {
-  
-  
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-        
-    }
-    .navigation-header__link {
-      margin-right: 30px;}
-    
-      .main {
-        
-        width: 1024px;
-      }
-    .main__image {
-        
-        height: 200px;
-      
-      }
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation-header__link {
+    margin-right: 30px;
+  }
+
+  .navigation-header {
+    background-color: #4975a0;
+    color: #fff;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .navigation-header__link {
+    color: #fff;
+    display: inline-flex;
+  }
+  .navigation-header__date {
+    /* display: inline-block; */
+    float: right;
+  }
+  .main {
+    width: 1024px;
+  }
+  .main__image {
+    height: 200px;
+  }
 }
