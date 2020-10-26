@@ -42,6 +42,11 @@ h2 {
   color: #1460aa;
 }
 
+h3::before{
+  content: ' !! ';
+  color: red;
+}
+
 .justify {
   text-justify: auto;
   text-align: justify;
@@ -53,7 +58,7 @@ h2 {
 }
 
 .main__h1 {
-  
+    
   margin: 30px auto 0;
 
   justify-content: center;
