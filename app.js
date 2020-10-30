@@ -1,1 +1,1 @@
-console.log("you have just run app.js")
+console.log("you have just run app.js");
